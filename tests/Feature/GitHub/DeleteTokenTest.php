@@ -15,7 +15,9 @@ class DeleteTokenTest extends TestCase
     public function testDeleteGithubToken()
     {
         Session::start();
-        $user = factory('App\User')->create();
+        $user = factory('App\User')->create([
+            'github_token' => 'Example-github-token'
+        ]);
         $response = $this->actingAs($user)->post('/delete-github-token', [
             '_token' => csrf_token()
         ]);
@@ -25,7 +27,5 @@ class DeleteTokenTest extends TestCase
             ->assertJson([
                 'message' => 'ok',
             ]);
-
-
     }
 }
