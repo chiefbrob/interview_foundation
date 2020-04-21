@@ -1,7 +1,7 @@
 # Github Starred Repositories
 
-[![Build Status](https://travis-ci.org/chiefbrob/interview_foundation.svg?branch=version2)](https://travis-ci.org/chiefbrob/interview_foundation)
-[![Coverage Status](https://coveralls.io/repos/github/chiefbrob/interview_foundation/badge.svg?branch=version2)](https://coveralls.io/github/chiefbrob/interview_foundation?branch=version2)
+[![Build Status](https://travis-ci.org/chiefbrob/interview_foundation.svg?branch=master)](https://travis-ci.org/chiefbrob/interview_foundation)
+[![Coverage Status](https://coveralls.io/repos/github/chiefbrob/interview_foundation/badge.svg?branch=master)](https://coveralls.io/github/chiefbrob/interview_foundation?branch=master)
 
 Displays your starred repositories on github using token
 
