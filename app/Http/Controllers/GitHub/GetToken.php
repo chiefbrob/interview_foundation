@@ -24,7 +24,7 @@ class GetToken extends Controller
                 'github_token' => $tk
             ]);
         } else {
-            return response([ 'message' => 'error' ],204);
+            return response([ 'message' => 'error' ], 204);
         }
     }
 }

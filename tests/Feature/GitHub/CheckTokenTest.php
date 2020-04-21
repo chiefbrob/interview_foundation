@@ -27,6 +27,5 @@ class CheckTokenTest extends TestCase
 
         $response = $this->actingAs($user2)->get('/get-github-token');
         $response->assertStatus(204);
-        $response->assertSeeText('error');
     }
 }
