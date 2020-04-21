@@ -26,10 +26,7 @@ class CheckTokenTest extends TestCase
         $user2 = factory('App\User')->create();
 
         $response = $this->actingAs($user2)->get('/get-github-token');
-        $response
-            ->assertStatus(204)
-            ->assertJson([
-                'message' => 'error',
-            ]);
+        $response->assertStatus(204);
+        $response->assertSeeText('error');
     }
 }
