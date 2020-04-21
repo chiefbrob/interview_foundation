@@ -23,3 +23,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/get-github-token', \GitHub\GetToken::class)->name('getToken');
 Route::post('/delete-github-token', \GitHub\DeleteToken::class)->name('deleteToken');
 Route::post('/save-github-token', \GitHub\SaveToken::class)->name('saveToken');
+Route::get('/repositories/starred', \GitHubAPI\GetStarredRepositories::class)->name('getStarredRepositories');
