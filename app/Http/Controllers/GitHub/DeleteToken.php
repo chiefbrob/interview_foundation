@@ -16,7 +16,7 @@ class DeleteToken extends Controller
     public function __invoke(Request $request)
     {
         $user = Auth::user();
-        $user->deleteGitHubToken()
+        $user->deleteGitHubToken();
         return response([ 'message' => 'ok' ], 202);
     }
 }
