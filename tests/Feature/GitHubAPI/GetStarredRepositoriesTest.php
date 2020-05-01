@@ -21,16 +21,5 @@ class GetStarredRepositoriesTest extends TestCase
             ->getJson('/repositories/starred')
             ->assertStatus(200)
             ->assertOk();
-        // Session::start();
-        // $user = factory('App\User')->create([
-        //     'github_token' => encrypt(env('GITHUB_TOKEN')),
-        // ]);
-
-        // $response = $this->actingAs($user)->get('/repositories/starred', [
-        //     '_token' => csrf_token()
-        // ]);
-
-        // $response->assertStatus(200);
-        // $response->assertSeeText('ok');
     }
 }
