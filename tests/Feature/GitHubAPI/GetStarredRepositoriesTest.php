@@ -2,14 +2,14 @@
 
 namespace Tests\Feature\GitHubAPI;
 
-use Illuminate\Foundation\Testing\DatabaseTransactions;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 use Session;
 
 class GetStarredRepositoriesTest extends TestCase
 {
-    use DatabaseTransactions;
+    use RefreshDatabase;
 
     public function testGetStarredRepos()
     {

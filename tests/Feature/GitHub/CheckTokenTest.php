@@ -2,7 +2,7 @@
 
 namespace Tests\Feature\Github;
 
-use Illuminate\Foundation\Testing\DatabaseTransactions;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 use Session;
@@ -10,7 +10,7 @@ use App\User;
 
 class CheckTokenTest extends TestCase
 {
-    use DatabaseTransactions; 
+    use RefreshDatabase; 
 
     public function testGetDecryptedGitHubTokenIfItsExists()
     {
